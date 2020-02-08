@@ -11,7 +11,6 @@ $white: #FFF;
   width: 328px;
 
   div {
-    color: $cod-grey;
     font-size: 36px;
     height: 105px;
     line-height: 105px;
@@ -50,6 +49,7 @@ $white: #FFF;
 
     & div{
       background-color: $mercury;
+      color: $cod-grey;
     }
     &ul {
       background-color: $white;
@@ -58,11 +58,9 @@ $white: #FFF;
 
 
   }
-  /*&.night {
+  &.night {
     background-color: $black;
     color: $white;
   }
-  &.default {
-    color: $cod-grey;
-  }*/
+
 }
