@@ -24,6 +24,6 @@ stories
     return <Button disabled={disabled} > Disabled </Button>
   })
   .add('with custom themes', () => {
-    const theme = select('custom theme', ['go', 'stop', 'yield'], 'go');
+    const theme = select('custom theme', ['go', 'stop', 'yield'], 'stop');
     return <Button theme={theme}> Themed </Button>
    });

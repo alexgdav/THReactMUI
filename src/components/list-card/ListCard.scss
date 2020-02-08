@@ -1,15 +1,61 @@
-ul {
-  list-style: none;
-  margin-left: 20px;
-  padding-left: 0;
-}
+$black: #000;
+$cod-grey: #0C0C0C;
+$mercury: #E8E8E8;
+$white: #FFF;
 
-li {
-  padding-left: 1em;
-  text-indent: -1em;
-}
 
-li:before {
-  content: "-";
-  padding-right: 5px;
+
+
+.ui-list-card {
+  border: 1px solid $black;
+  border-radius: 10px;
+  box-shadow: 4px 5px 4px $black;
+  width: 328px;
+
+  div {
+    color: $cod-grey;
+    font-size: 36px;
+    height: 105px;
+    line-height: 105px;
+    text-align: center;
+  }
+
+  li {
+    line-height: 20px;
+    padding-left: 1em;
+    // padding-top: 10px;
+    text-indent: -1em;
+  }
+
+  li:before {
+    content: "-";
+    padding-right: 5px;
+
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 0;
+  }
+
+  &.day {
+    & div{
+      background-color: $mercury;
+    }
+    &ul {
+      background-color: $white;
+      color: $cod-grey;
+    }
+
+
+  }
+  /*&.night {
+    background-color: $black;
+    color: $white;
+  }
+  &.default {
+    color: $cod-grey;
+  }*/
 }
