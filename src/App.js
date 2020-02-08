@@ -5,7 +5,7 @@ import  { ListCard } from './components'
 import './App.scss';
 
 const header = "Header"
-const list = ["Item 1", "Item 2", "Item 3 making longer to test wrapping properties wrap wrap wrap wrap"]
+const list = ["Item 1", "Item 2", "Item 3 is longer, to test wrapping"]
 class App extends Component {
 
   render() {
@@ -14,9 +14,9 @@ class App extends Component {
         <header>
           <h1>Components</h1>
         </header>
-        <div className="component-list">
+        <div className="component-list"style={ { display: "block"}}>
+          <Button href="#" theme='go' style={ { margin: "0 0 10px 0"}}> Button </Button>
           <ListCard header={header} items={list}/ >
-          <Button href="#" theme='go'> Button </Button>
 
         </div>
       </div>

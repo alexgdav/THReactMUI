@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Card as Base } from '@material-ui/core';
 import classNames from 'classnames';
 import './ListCard.scss'
@@ -34,10 +34,14 @@ class ListCard extends Component {
     const classes = classNames('ui-list-card', className, {[themeObj.class]: [theme] })
 
     return (
+
       <Base className={classes}>
+      <Fragment>
         <div>{header}</div>
         <ul>{itemsMap}</ul>
+      </Fragment>
       </Base>
+
     )
   }
 

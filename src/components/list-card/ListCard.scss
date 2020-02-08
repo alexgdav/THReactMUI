@@ -7,9 +7,7 @@ $white: #FFF;
 
 
 .ui-list-card {
-  border: 1px solid $black;
   border-radius: 10px;
-  box-shadow: 4px 5px 4px $black;
   width: 328px;
 
   div {
@@ -21,10 +19,11 @@ $white: #FFF;
   }
 
   li {
-    line-height: 20px;
+    //line-height: 20px;
     // padding-left: 1em;
     // padding-top: 10px;
     // text-indent: -1em;
+    padding-bottom: 10px;
     word-wrap: break-word;
   }
 
@@ -35,6 +34,8 @@ $white: #FFF;
   }
 
   ul {
+    font-size: 24px;
+    line-height: 20px;
     list-style: none;
     margin: 20px;
     padding-left: 0;
@@ -44,6 +45,9 @@ $white: #FFF;
   }
 
   &.day {
+    border: 1px solid $black;
+    box-shadow: 4px 5px 4px $black;
+
     & div{
       background-color: $mercury;
     }
