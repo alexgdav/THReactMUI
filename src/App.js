@@ -5,7 +5,7 @@ import  { ListCard } from './components'
 import './App.scss';
 
 const header = "Header"
-const list = ["Item 1", "Item 2", "Item 3"]
+const list = ["Item 1", "Item 2", "Item 3 making longer to test wrapping properties wrap wrap wrap wrap"]
 class App extends Component {
 
   render() {
