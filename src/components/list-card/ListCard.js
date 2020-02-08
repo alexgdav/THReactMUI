@@ -1,23 +1,40 @@
 import React, { Component } from 'react';
 import { Card as Base } from '@material-ui/core';
-// import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import './ListCard.scss'
+import PropTypes from 'prop-types';
 
 
 class ListCard extends Component {
 
   render() {
     const {
+      className,
       header,
-      items
+      items,
+      theme
     } = this.props
 
   const itemsMap = items.map((item, index) =>
     <li key={index}>{item}</li>
   )
 
+  const themeObj = {};
+
+  switch(theme) {
+    case 'light':
+      themeObj.class = 'day';
+      break;
+    case 'dark':
+      themeObj.class = 'night';
+      break;
+    default:
+      themeObj.class = 'day';
+  }
+    const classes = classNames('ui-list-card', className, {[themeObj.class]: [theme] })
 
     return (
-      <Base>
+      <Base className={classes}>
         <div>{header}</div>
         <ul>{itemsMap}</ul>
       </Base>
@@ -26,10 +43,15 @@ class ListCard extends Component {
 
 }
 
-/* ListCard.propTypes = {
+ ListCard.propTypes = {
 
+classes: PropTypes.object,
+/**
+ * @ignore
+ */
+className: PropTypes.string,
 
-};*/
+}
 
 /* ListCard.defaultProps = {
 };*/

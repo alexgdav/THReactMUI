@@ -4,7 +4,7 @@ import  { ListCard } from './components'
 
 import './App.scss';
 
-const header="Header"
+const header = "Header"
 const list = ["Item 1", "Item 2", "Item 3"]
 class App extends Component {
 
