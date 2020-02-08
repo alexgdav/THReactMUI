@@ -4,6 +4,7 @@ import  { ListCard } from './components'
 
 import './App.scss';
 
+const header="Header"
 const list = ["Item 1", "Item 2", "Item 3"]
 class App extends Component {
 
@@ -14,7 +15,7 @@ class App extends Component {
           <h1>Components</h1>
         </header>
         <div className="component-list">
-          <ListCard items={list}/ >
+          <ListCard header={header} items={list}/ >
           <Button href="#" theme='go'> Button </Button>
 
         </div>

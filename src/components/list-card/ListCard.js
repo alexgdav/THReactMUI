@@ -7,6 +7,7 @@ class ListCard extends Component {
 
   render() {
     const {
+      header,
       items
     } = this.props
 
@@ -17,6 +18,7 @@ class ListCard extends Component {
 
     return (
       <Base>
+        <div>{header}</div>
         <ul>{itemsMap}</ul>
       </Base>
     )
