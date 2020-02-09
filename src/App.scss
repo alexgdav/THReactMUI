@@ -1,4 +1,5 @@
-html, body, #root .App {
+@import "./variables";
+html, body, #root, .App {
   height: 100%;
 }
 
@@ -15,4 +16,12 @@ html, body, #root .App {
   flex: 1;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.light {
+  background-color: $white;
+}
+
+.dark {
+  background-color: $black;
 }

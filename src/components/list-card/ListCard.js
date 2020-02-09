@@ -37,11 +37,11 @@ class ListCard extends Component {
     return (
 
       <Base className={classes}>
-        <header>{header}</header>
-          <div>
+        <section>{header}</section>
+          <article>
             <ul>{itemsMap}</ul>
             {children}
-          </div>
+          </article>
       </Base>
 
     )

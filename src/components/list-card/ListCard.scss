@@ -11,16 +11,17 @@ $white: #FFF;
   border-radius: 10px;
   width: 328px;
 
-  div {
+  article {
     min-height: 318px;
     border: 1px solid transparent;
   }
 
-  header {
+  section {
     font-size: 36px;
     height: 105px;
     line-height: 105px;
     text-align: center;
+    width: inherit;
   }
 
   li {
@@ -38,9 +39,6 @@ $white: #FFF;
 
   }
 
-  section {
-    height: 425px;
-  }
 
   ul {
     font-size: 24px;
@@ -55,11 +53,11 @@ $white: #FFF;
     box-shadow: 4px 5px 4px $black;
     color: $cod-grey;
 
-    & .div {
+    & article {
       background-color: $white;
     }
 
-    & header {
+    & section {
       background-color: $mercury;
 
     }
@@ -72,13 +70,13 @@ $white: #FFF;
     box-shadow: 4px 5px 4px $white;
     color: $white;
 
-    & div {
+    & article {
       background-color: $silver;
       margin: 0px;
       padding: 0px;
     }
 
-    & header {
+    & section {
      background-color: $dove-grey;
     }
 
