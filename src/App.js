@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Button } from './components';
+import { Button } from './components';
 import  { ListCard } from './components'
 import './App.scss';
 
@@ -13,14 +13,14 @@ class App extends Component {
   }
 
   render() {
-    const divClass = `component-list ${this.whichtheme}`;
+    const divClass = `App component-list ${this.whichtheme}`;
     return (
-      <div className='App'>
+      <div className={divClass}>
         <header>
           <h1>Components</h1>
         </header>
         <div className={divClass}>
-          {/*<Button href="#" theme='go' style={ { margin: "0 0 10px 0"}}> Button </Button>*/}
+          <Button href="#" theme='go' style={ { margin: "0 0 10px 0"}}> Button </Button>
           <ListCard theme={this.whichtheme}  header={header} items={list}/ >
 
        </div>
