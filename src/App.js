@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from './components';
+// import { Button } from './components';
 import  { ListCard } from './components'
 
 import './App.scss';
@@ -14,11 +14,11 @@ class App extends Component {
         <header>
           <h1>Components</h1>
         </header>
-        <div className="component-list"style={ { display: "block"}}>
-          <Button href="#" theme='go' style={ { margin: "0 0 10px 0"}}> Button </Button>
-          <ListCard theme="default" header={header} items={list}/ >
+        <div className="component-list">
+          {/*<Button href="#" theme='go' style={ { margin: "0 0 10px 0"}}> Button </Button>*/}
+          <ListCard theme="dark" header={header} items={list}/ >
 
-        </div>
+       </div>
       </div>
     );
   }

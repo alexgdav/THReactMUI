@@ -1,9 +1,9 @@
 $black: #000;
 $cod-grey: #0C0C0C;
+$dove-grey: #727272;
 $mercury: #E8E8E8;
+$silver: #C2C2C2;
 $white: #FFF;
-
-
 
 
 .ui-list-card {
@@ -11,8 +11,12 @@ $white: #FFF;
   width: 328px;
 
   div {
+    min-height: 320px;
+  }
+
+  header {
     font-size: 36px;
-    height: 105px;
+  //  height: 105px;
     line-height: 105px;
     text-align: center;
   }
@@ -38,29 +42,37 @@ $white: #FFF;
     list-style: none;
     margin: 20px;
     padding-left: 0;
-    min-height: 320px;
-
-
   }
 
   &.day {
     border: 1px solid $black;
     box-shadow: 4px 5px 4px $black;
+    color: $cod-grey;
 
-    & div{
-      background-color: $mercury;
-      color: $cod-grey;
-    }
-    &ul {
+    & div {
       background-color: $white;
-      color: $cod-grey;
     }
 
+    & header {
+      background-color: $mercury;
 
+    }
   }
+
   &.night {
-    background-color: $black;
+    background-color: $silver;
+    border: 1px solid $white;
+    box-shadow: 4px 5px 4px $white;
     color: $white;
+
+    & div {
+      background-color: $silver;
+    }
+
+    & header {
+     background-color: $dove-grey;
+    }
+
   }
 
 }
