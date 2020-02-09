@@ -15,12 +15,13 @@
 In order to fully match the Dark Theme to what is pictured in the spec, the background attribute of the App component and/or the background attribute of the `component-list <div>` needs to be changed to black.<br/>
 That can't be done just by setting the `theme` prop to dark or light in the `ListCard` component (as written in the spec). Setting only that prop will only change the card itself, because props cannot be passed from child to parent components. <br/>
 In order to match the image, I added `this.whichtheme` to the `App` constructor (currently manually set to light), and passed that to the `List Card` instead. To add light and dark classes to the `App` and `component-list` so their backgrounds can be changed, I set `const divClass = App component-list ${this.whichtheme}`.<br/>
-Since no theme toggle was mentioned in the spec, in order to change themes from `light` to `dark`, you'll need to manually change LINE 12 in `App.js`: 
-```constructor() {
+Since no theme toggle was mentioned in the spec, in order to change themes from `light` to `dark`, you'll need to manually change LINE 12 in `App.js`:
+```
+constructor() {
   super()
   this.whichtheme = "light"
-}```
-
+}
+```
 
 
 
