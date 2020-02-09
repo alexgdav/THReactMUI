@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ##### `npm start`
 
-Runs the app in the development mode.<br>
+Runs the app in development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
@@ -23,7 +23,7 @@ Open [http://localhost:9009](http://localhost:9009) to view it in the browser.
 
 #### Setup
 
-- Clone this repository
-- Npm i
-- Npm run start
-- Npm run storybook
+-   Clone this repository
+-   Npm install
+-   Npm run start
+-   Npm run storybook
