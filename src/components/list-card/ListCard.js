@@ -9,8 +9,8 @@ class ListCard extends Component {
 
   render() {
     const {
-      className,
       children,
+      className,
       header,
       items,
       theme
@@ -37,21 +37,15 @@ class ListCard extends Component {
     return (
 
       <Base className={classes}>
-
-
         <header>{header}</header>
-        <div >
-        <ul>{itemsMap}</ul>
-        {children}
-        </div>
-
-
-
+          <div >
+            <ul>{itemsMap}</ul>
+            {children}
+          </div>
       </Base>
 
     )
   }
-
 }
 
  ListCard.propTypes = {
