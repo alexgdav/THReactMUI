@@ -6,18 +6,19 @@ $silver: #C2C2C2;
 $white: #FFF;
 
 
+
 .ui-list-card {
   border-radius: 10px;
   width: 328px;
 
   div {
-    min-height: 320px;
+    min-height: 318px;
     border: 1px solid transparent;
   }
 
   header {
     font-size: 36px;
-  //  height: 105px;
+    height: 105px;
     line-height: 105px;
     text-align: center;
   }
@@ -37,6 +38,10 @@ $white: #FFF;
 
   }
 
+  section {
+    height: 425px;
+  }
+
   ul {
     font-size: 24px;
     line-height: 20px;
@@ -50,7 +55,7 @@ $white: #FFF;
     box-shadow: 4px 5px 4px $black;
     color: $cod-grey;
 
-    & div {
+    & .div {
       background-color: $white;
     }
 
@@ -67,17 +72,16 @@ $white: #FFF;
     box-shadow: 4px 5px 4px $white;
     color: $white;
 
-    &.component-list{
-      height: 100vh;
-    }
-
     & div {
       background-color: $silver;
+      margin: 0px;
+      padding: 0px;
     }
 
     & header {
      background-color: $dove-grey;
     }
+
 
   }
 
