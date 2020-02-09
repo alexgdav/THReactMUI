@@ -60,10 +60,15 @@ $white: #FFF;
   }
 
   &.night {
+
     background-color: $silver;
     border: 1px solid $white;
     box-shadow: 4px 5px 4px $white;
     color: $white;
+
+    &.component-list{
+      height: 100vh;
+    }
 
     & div {
       background-color: $silver;
