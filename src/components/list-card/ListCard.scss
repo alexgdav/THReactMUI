@@ -9,14 +9,6 @@
     border: 1px solid transparent;
   }
 
-  section {
-    font-size: 36px;
-    height: 105px;
-    line-height: 105px;
-    text-align: center;
-    width: inherit;
-  }
-
   li {
     padding-bottom: 10px;
     word-wrap: break-word;
@@ -27,7 +19,14 @@
     padding-right: 5px;
 
   }
-
+  
+  section {
+    font-size: 36px;
+    height: 105px;
+    line-height: 105px;
+    text-align: center;
+    width: inherit;
+  }
 
   ul {
     font-size: 24px;
