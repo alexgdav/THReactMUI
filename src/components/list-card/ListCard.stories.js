@@ -24,6 +24,6 @@ stories
   ))
 .add('with emoji list', () => <ListCard header={riddle} items={emoji}></ListCard>)
 .add('with custom themes', () => {
-  const theme = select('custom theme', ['light', 'dark'], 'dark')
+  const theme = select('custom theme', ['light', 'dark'], 'light')
   return <ListCard header={themed} items={list} theme={theme}/>
  })
