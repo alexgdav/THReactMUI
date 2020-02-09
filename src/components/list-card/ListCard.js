@@ -10,6 +10,7 @@ class ListCard extends Component {
   render() {
     const {
       className,
+      children,
       header,
       items,
       theme
@@ -39,8 +40,9 @@ class ListCard extends Component {
 
 
         <header>{header}</header>
-        <div>
+        <div >
         <ul>{itemsMap}</ul>
+        {children}
         </div>
 
 

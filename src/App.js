@@ -16,7 +16,7 @@ class App extends Component {
         </header>
         <div className="component-list">
           {/*<Button href="#" theme='go' style={ { margin: "0 0 10px 0"}}> Button </Button>*/}
-          <ListCard theme="light" header={header} items={list}/ >
+          <ListCard theme="dark" header={header} items={list}/ >
 
        </div>
       </div>
